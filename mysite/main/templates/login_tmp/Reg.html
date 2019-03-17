@@ -1,0 +1,23 @@
+<html>
+    <title>Registration</title>
+    <head>
+        <strong>Hello register here!</strong>
+    </head>
+    <body>
+        <form method="POST" action="">
+            {% csrf_token %}
+            First name:<br>
+            <input type="text" name="firstname" maxlength="100" required><br>
+            Last name:<br>
+            <input type="text" name="lastname" maxlength="100" required><br>
+            Email ID:<br>
+            <input type="text" name="email" required><br>
+            User name:<br>
+            <input type="text" name="user_name" maxlength="10" required><br>
+            New Password:<br>
+            <input type="password" name="password"><br>
+            <input type="checkbox" name="remember_me">Remember Me<br>
+            <input type="submit" value="Register">
+        </form>
+    </body>
+</html>

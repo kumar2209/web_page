@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>tesing</title>
+	</head>
+	<body>
+		{% block content %}
+		<form action="" method="post">
+		    {% csrf_token %}
+		    {{ form }}
+		    <input type="submit" value="Submit">
+		</form>
+		{% endblock %}
+	</body>
+</html>
